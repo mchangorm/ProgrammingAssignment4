@@ -23,4 +23,76 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - Repeat with test dataset
 - Merge both train and test datasets together
 - Perform melt and dcast functions to aggregate the data
-  
+
+
+### Variables 
+
+***
+|      Original Variable      |      Renamed Variable     |                                                                         Description                                                                         |
+|:---------------------------:|:-------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| tBodyAcc-mean()-X           | timeBodyAccMeanX          | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
+| tBodyAcc-mean()-Y           | timeBodyAccMeanY          | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
+| tBodyAcc-mean()-Z           | timeBodyAccMeanZ          | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
+| tGravityAcc-mean()-X        | timeGravityAccMeanX       | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
+| tGravityAcc-mean()-Y        | timeGravityAccMeanY       | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
+| tGravityAcc-mean()-Z        | timeGravityAccMeanZ       | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
+| tBodyAccJerk-mean()-X       | timeBodyAccJerkMeanX      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyAccJerk-mean()-Y       | timeBodyAccJerkMeanY      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyAccJerk-mean()-Z       | timeBodyAccJerkMeanZ      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyGyro-mean()-X          | timeBodyGyroMeanX         | Mean value of the angular velocity in the indicated axis.                                                                                                   |
+| tBodyGyro-mean()-Y          | timeBodyGyroMeanY         | Mean value of the angular velocity in the indicated axis.                                                                                                   |
+| tBodyGyro-mean()-Z          | timeBodyGyroMeanZ         | Mean value of the angular velocity in the indicated axis.                                                                                                   |
+| tBodyGyroJerk-mean()-X      | timeBodyGyroJerkMeanX     | Mean value of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                            |
+| tBodyGyroJerk-mean()-Y      | timeBodyGyroJerkMeanY     | Mean value of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                            |
+| tBodyGyroJerk-mean()-Z      | timeBodyGyroJerkMeanZ     | Mean value of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                            |
+| tBodyAccMag-mean()          | timeBodyAccMagMean        | Mean value of the magnitude of the body acceleration signal measured.                                                                                       |
+| tGravityAccMag-mean()       | timeGravityAccMagMean     | Mean value of the magnitude of the gravity acceleration.                                                                                                    |
+| tBodyAccJerkMag-mean()      | timeBodyAccJerkMagMean    | Mean value of the magnitude of the body acceleration signal derivation used to obtain jerk signals.                                                         |
+| tBodyGyroMag-mean()         | timeBodyGyroMagMean       | Mean value of the magnitude of the angular velocity.                                                                                                        |
+| tBodyGyroJerkMag-mean()     | timeBodyGyroJerkMagMean   | Mean value of the magnitude of the angular velocity derivation used to obtain jerk signals.                                                                 |
+| fBodyAcc-mean()-X           | freqBodyAccMeanX          | Mean value of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                                       |
+| fBodyAcc-mean()-Y           | freqBodyAccMeanY          | Mean value of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                                       |
+| fBodyAcc-mean()-Z           | freqBodyAccMeanZ          | Mean value of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                                       |
+| fBodyAccJerk-mean()-X       | freqBodyAccJerkMeanX      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied.         |
+| fBodyAccJerk-mean()-Y       | freqBodyAccJerkMeanY      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied.         |
+| fBodyAccJerk-mean()-Z       | freqBodyAccJerkMeanZ      | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied.         |
+| fBodyGyro-mean()-X          | freqBodyGyroMeanX         | Mean value of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                        |
+| fBodyGyro-mean()-Y          | freqBodyGyroMeanY         | Mean value of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                        |
+| fBodyGyro-mean()-Z          | freqBodyGyroMeanZ         | Mean value of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                        |
+| fBodyAccMag-mean()          | freqBodyAccMagMean        | Mean value of the magnitude of the body acceleration signal measured where a Fast Fourier Transform was applied.                                            |
+| fBodyBodyAccJerkMag-mean()  | freqBodyAccJerkMagMean    | Mean value of the magnitude of the body acceleration signal derivation used to obtain jerk signals where a Fast Fourier Transform was applied.              |
+| fBodyBodyGyroMag-mean()     | freqBodyGyroMagMean       | Mean value of the magnitude of the angular velocity derivation used to obtain jerk signals where a Fast Fourier Transform was applied.                      |
+| fBodyBodyGyroJerkMag-mean() | freqBodyGyroJerkMagMean   | Mean value of the magnitude of the angular velocity derivation used to obtain jerk signals where a Fast Fourier Transform was applied.                      |
+| tBodyAcc-std()-X            | timeBodyAccStdDevX        | Standard deviation of the body acceleration signal measured in the indicated axis.                                                                          |
+| tBodyAcc-std()-Y            | timeBodyAccStdDevY        | Standard deviation of the body acceleration signal measured in the indicated axis.                                                                          |
+| tBodyAcc-std()-Z            | timeBodyAccStdDevZ        | Standard deviation of the body acceleration signal measured in the indicated axis.                                                                          |
+| tGravityAcc-std()-X         | timeGravityAccStdDevX     | Standard deviation of the gravity acceleration signal measured in the indicated axis.                                                                       |
+| tGravityAcc-std()-Y         | timeGravityAccStdDevY     | Standard deviation of the gravity acceleration signal measured in the indicated axis.                                                                       |
+| tGravityAcc-std()-Z         | timeGravityAccStdDevZ     | Standard deviation of the gravity acceleration signal measured in the indicated axis.                                                                       |
+| tBodyAccJerk-std()-X        | timeBodyAccJerkStdDevX    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                            |
+| tBodyAccJerk-std()-Y        | timeBodyAccJerkStdDevY    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                            |
+| tBodyAccJerk-std()-Z        | timeBodyAccJerkStdDevZ    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                            |
+| tBodyGyro-std()-X           | timeBodyGyroStdDevX       | Standard deviation of the angular velocity in the indicated axis.                                                                                           |
+| tBodyGyro-std()-Y           | timeBodyGyroStdDevY       | Standard deviation of the angular velocity in the indicated axis.                                                                                           |
+| tBodyGyro-std()-Z           | timeBodyGyroStdDevZ       | Standard deviation of the angular velocity in the indicated axis.                                                                                           |
+| tBodyGyroJerk-std()-X       | timeBodyGyroJerkStdDevX   | Standard deviation of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyGyroJerk-std()-Y       | timeBodyGyroJerkStdDevY   | Standard deviation of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyGyroJerk-std()-Z       | timeBodyGyroJerkStdDevZ   | Standard deviation of the angular velocity derivation used to obtain jerk signals in the indicated axis.                                                    |
+| tBodyAccMag-std()           | timeBodyAccMagStdDev      | Standard deviation of the magnitude of the body acceleration signal measured.                                                                               |
+| tGravityAccMag-std()        | timeGravityAccMagStdDev   | Standard deviation of the magnitude of the gravity acceleration.                                                                                            |
+| tBodyAccJerkMag-std()       | timeBodyAccJerkMagStdDev  | Standard deviation of the magnitude of the body acceleration signal derivation used to obtain jerk signals.                                                 |
+| tBodyGyroMag-std()          | timeBodyGyroMagStdDev     | Standard deviation of the magnitude of the angular velocity.                                                                                                |
+| tBodyGyroJerkMag-std()      | timeBodyGyroJerkMagStdDev | Standard deviation of the magnitude of the angular velocity derivation used to obtain jerk signals.                                                         |
+| fBodyAcc-std()-X            | freqBodyAccStdDevX        | Standard deviation of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                               |
+| fBodyAcc-std()-Y            | freqBodyAccStdDevY        | Standard deviation of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                               |
+| fBodyAcc-std()-Z            | freqBodyAccStdDevZ        | Standard deviation of the body acceleration signal measured in the indicated axis where a Fast Fourier Transform was applied.                               |
+| fBodyAccJerk-std()-X        | freqBodyAccJerkStdDevX    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied. |
+| fBodyAccJerk-std()-Y        | freqBodyAccJerkStdDevY    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied. |
+| fBodyAccJerk-std()-Z        | freqBodyAccJerkStdDevZ    | Standard deviation of the body acceleration signal derivation used to obtain jerk signals in the indicated axis where a Fast Fourier Transform was applied. |
+| fBodyGyro-std()-X           | freqBodyGyroStdDevX       | Standard deviation of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                |
+| fBodyGyro-std()-Y           | freqBodyGyroStdDevY       | Standard deviation of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                |
+| fBodyGyro-std()-Z           | freqBodyGyroStdDevZ       | Standard deviation of the angular velocity in the indicated axis where a Fast Fourier Transform was applied.                                                |
+| fBodyAccMag-std()           | freqBodyAccMagStdDev      | Standard deviation of the magnitude of the body acceleration signal measured where a Fast Fourier Transform was applied.                                    |
+| fBodyBodyAccJerkMag-std()   | freqBodyAccJerkMagStdDev  | Standard deviation of the magnitude of the body acceleration signal derivation used to obtain jerk signals where a Fast Fourier Transform was applied.      |
+| fBodyBodyGyroMag-std()      | freqBodyGyroMagStdDev     | Standard deviation of the magnitude of the angular velocity where a Fast Fourier Transform was applied.                                                     |
+| fBodyBodyGyroJerkMag-std()  | freqBodyGyroJerkMagStdDev | Standard deviation of the magnitude of the angular velocity derivation used to obtain jerk signals where a Fast Fourier Transform was applied.              |
