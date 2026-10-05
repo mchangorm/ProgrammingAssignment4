@@ -22,15 +22,20 @@ else {
    unlink(datasetpath, recursive = TRUE)
 }
 
+# Download file
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(url, file.path(path, datafilename))
 unzip(zipfile = datafilename, exdir = path)
 
 file.rename ( from = "UCI HAR Dataset", to = datasetpath)
 
+# Merge datasets
 raw_data_test <- read.table("dataset/test/X_test.txt")
 raw_data_train <- read.table("dataset/train/X_train.txt")
 
 merged_data <- rbind(raw_data_test,raw_data_train)
 
+# Read features and activity labels
 features <- read.table("dataset/features.txt")
+activitylabels <- read.table("dataset/activity_labels.txt")
+
