@@ -17,4 +17,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ## Methodology
 
 - Download the file
+- Extract out features 
+- Load train dataset and make sense of it
+- Take out unneeded measurements and rename columns with actual 
 - 
