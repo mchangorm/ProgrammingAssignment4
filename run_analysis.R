@@ -9,7 +9,7 @@
 #require(data.table)
 require(dplyr)
 # Windows
-setwd("C:/Users/mchang/Projects/ProgrammingAssignment4")
+# setwd("C:/Users/mchang/Projects/ProgrammingAssignment4")
 
 # Mac
 setwd("/Users/mchang/Projects/ProgrammingAssignment4")
@@ -17,11 +17,11 @@ path <- getwd()
 datasetpath <- file.path(path,"dataset")
 datafilename <- "dataFiles.zip"
 
-if( !dir.exists(datasetpath))
+ if ( !dir.exists(datasetpath))
 {
     dir.create(datasetpath)
-}
-else {
+} else
+{
    unlink(datasetpath, recursive = TRUE)
 }
 
@@ -37,6 +37,8 @@ raw_data_test <- read.table("dataset/test/X_test.txt")
 raw_data_train <- read.table("dataset/train/X_train.txt")
 
 merged_data <- rbind(raw_data_test,raw_data_train)
+
+unlink(path,"getdata_projectfiles_UCI HAR Dataset.zip")
 
 # Read features and activity labels
 features <- read.table("dataset/features.txt")
