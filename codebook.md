@@ -28,15 +28,15 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ### Variables 
 
 ***
-|      Original Variable      |  Description                                                                         |
-|:--------------------------- :-------------------------------------------------------------------------------------:|
-| tBodyAcc-mean()-X           | Mean value of the body acceleration signal measured in the indicated axis.           |
-| tBodyAcc-mean()-Y           | Mean value of the body acceleration signal measured in the indicated axis.           |
+| Original Variable           | Description                                                                                                                                                 |
+| :-------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| tBodyAcc-mean()-X           | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
+| tBodyAcc-mean()-Y           | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
 | tBodyAcc-mean()-Z           | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
 | tGravityAcc-mean()-X        | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
 | tGravityAcc-mean()-Y        | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
 | tGravityAcc-mean()-Z        | Mean value of the gravity acceleration signal measured in the indicated axis.                                                                               |
-| tBodyAccJerk-mean()-X       | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                   |
+| tBodyAccJerk-mean()-X       | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
 | tBodyAccJerk-mean()-Y       | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
 | tBodyAccJerk-mean()-Z       | Mean value of the body acceleration signal derivation used to obtain jerk signals in the indicated axis.                                                    |
 | tBodyGyro-mean()-X          | Mean value of the angular velocity in the indicated axis.                                                                                                   |
@@ -95,4 +95,4 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 | fBodyAccMag-std()           | Standard deviation of the magnitude of the body acceleration signal measured where a Fast Fourier Transform was applied.                                    |
 | fBodyBodyAccJerkMag-std()   | Standard deviation of the magnitude of the body acceleration signal derivation used to obtain jerk signals where a Fast Fourier Transform was applied.      |
 | fBodyBodyGyroMag-std()      | Standard deviation of the magnitude of the angular velocity where a Fast Fourier Transform was applied.                                                     |
-| fBodyBodyGyroJerkMag-std()  Standard deviation of the magnitude of the angular velocity derivation used to obtain jerk signals where a Fast Fourier Transform was applied.              |
+| fBodyBodyGyroJerkMag-std()  | Standard deviation of the magnitude of the angular velocity derivation used to obtain jerk signals where a Fast Fourier Transform was applied.              |
