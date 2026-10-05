@@ -28,7 +28,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ### Variables 
 
 ***
-| Original Variable           | Description                                                                                                                                                 |
+|          Variable           | Description                                                                                                                                                 |
 | :-------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | tBodyAcc-mean()-X           | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
 | tBodyAcc-mean()-Y           | Mean value of the body acceleration signal measured in the indicated axis.                                                                                  |
