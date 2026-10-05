@@ -9,10 +9,10 @@
 #require(data.table)
 require(dplyr)
 # Windows
-# setwd("C:/Users/mchang/Projects/ProgrammingAssignment4")
+setwd("C:\\Users\\mchang\\Projects\\ProgrammingAssignment4")
 
 # Mac
-setwd("/Users/mchang/Projects/ProgrammingAssignment4")
+# setwd("/Users/mchang/Projects/ProgrammingAssignment4")
 path <- getwd()
 datasetpath <- file.path(path,"dataset")
 datafilename <- "dataFiles.zip"
@@ -39,8 +39,8 @@ file.rename ( from = "UCI HAR Dataset", to = datasetpath)
 #unlink(path,"getdata_projectfiles_UCI HAR Dataset.zip")
 
 # Read features and activity labels
-features <- read.table("dataset/features.txt", col.names = c("index", "featurenames"))
-activitylabels <- read.table("dataset/activity_labels.txt", col.names = c("classlabels","activitynames"))
+features <- read.table("dataset\\features.txt", col.names = c("index", "featurenames"))
+activitylabels <- read.table("dataset\\activity_labels.txt", col.names = c("classlabels","activitynames"))
 
 ## extract only mean and standard deviation from features
 ## and put them into another variable called measurements
@@ -50,4 +50,4 @@ features2 <- grep("([Mm]ean|[Ss]td)", features[, 2])
 measurements <- features[features2, 2]
 
 ## load train dataset with only required colunms measurements
-raw_data_train <- read.table("dataset/train/X_train.txt", features2)
+raw_data_train <- read.table("dataset\\train\\X_train.txt", features2)
