@@ -33,6 +33,7 @@
 ## Explanation of files
 
 - readme.md - this file
+- codebook.md - an extraneous file.
 - run_analysis.R - the file containing the R code
 - tidydata-orig.txt - the merged result with descriptive activity names and variable names that only pertain to the mean and standard deviation for each measurement
 - tidydata-long.txt - the merged result after passed through the melt function from data.tables. This converts wide format data into long format data which is required to calculate the average
