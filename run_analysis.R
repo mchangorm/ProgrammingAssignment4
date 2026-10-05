@@ -8,7 +8,10 @@
 
 #require(data.table)
 require(dplyr)
+# Windows
+setwd("C:/Users/mchang/Projects/ProgrammingAssignment4")
 
+# Mac
 setwd("/Users/mchang/Projects/ProgrammingAssignment4")
 path <- getwd()
 datasetpath <- file.path(path,"dataset")
